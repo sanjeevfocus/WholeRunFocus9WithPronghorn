@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.focus.listeners.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.focus.testcases.URLBrowserTest"/>
+      <class name="com.focus.testcases.ItemQueryPageTest"/>
+      <class name="com.focus.testcases.BatchNegativeTestingOptionsTest"/>
+      <class name="com.focus.testcases.DesignWorkFlowOptionsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.focus.testcases.BatchNegativeTestingOptionsTest">
+        <methods>
+          <include name="beforeMethodExecution"/>
+          <include name="checkBatchPopupInStockTransferVoucher1"/>
+          <include name="checkSavingStockTransferVoucher1"/>
+          <include name="afterMethodExecution"/>
+        </methods>
+      </class> <!-- com.focus.testcases.BatchNegativeTestingOptionsTest -->
+      <class name="com.focus.testcases.DesignWorkFlowOptionsTest">
+        <methods>
+          <include name="checkValidatingAddingNewFieldInLinksCustomization"/>
+          <include name="checkCloseLinkOptionOnPartialRowSelectionInPurchaseOrderHavingOneLinkDocument"/>
+          <include name="checkLinkIsOptionalIfTheDocumentIsLinkedToOtherBaseDocumentOption"/>
+          <include name="checkDoNotClubWithCommonBaseOption"/>
+          <include name="checkBackup"/>
+          <include name="checkListingOfDocumentsByDueDateReport"/>
+          <include name="checkRaiseLinkDocumentWhenBaseIsSaved"/>
+          <include name="checkValidatingExportFunctionalityInLinksCustomization"/>
+          <include name="checkPendingVoucherReport"/>
+          <include name="checkRaiseLinkDocumentWhenBaseIsSavedOption"/>
+          <include name="checkCloseLinkAndPartialOptionInPurchaseOrderHavingOneLinkDocument"/>
+          <include name="checkLogin"/>
+          <include name="checkSavingPurchaseOrderVoucherForCloseLinkAndEditingLinkOptionAndSlabChangeVoucherSave"/>
+          <include name="checkSavingShortageInStocksVoucher1"/>
+          <include name="checkCloseLinkOptionOnPartialRowSelectionInPurchaseOrderHavingTwoLinkDocuments"/>
+          <include name="checkDeletingPurchaseFlowAndSavingNewFlowWithOneBaseAndOneLinkDocument"/>
+          <include name="checkCannotExceedTheBaseValueOptionForMultipleRowsWithDifferentItem"/>
+          <include name="checkListingOfDocumentsReport"/>
+          <include name="checkSavingPurchaseOrderAndPurchaseVoucherNPartialConsumeCloseLink"/>
+          <include name="checkSavingOpeningStockVoucher1WithBatchItem"/>
+          <include name="checkCannotExceedTheBaseValueOptionOnEditing"/>
+          <include name="checkRecheckBeforeTheSavingIfLinkIsConsumedElseWhereOnTheNetWorkOption"/>
+          <include name="checkAgeingOfPendingDocumentsReport"/>
+          <include name="checkCustomizeOptionAndHideThisColumnInControlPlusL"/>
+          <include name="checkLoadPendingDocumentsAndBasedOnFieldOption"/>
+          <include name="checkLoadTheBaseDocumentDetailsAtTheTimeOfLinkingOption"/>
+          <include name="checkAgeingOfPendingDocumentsByDueDateReport"/>
+          <include name="checkCloseLinkAndPartialOptionInPurchaseOrderHavingTwoLinkDocuments"/>
+          <include name="checkCustomizeOptionAndAddingExtraFieldsInLineWise"/>
+          <include name="checkLoadPendingDocumentsAndBasedOnFieldOptionWithExtraField"/>
+          <include name="checkCustomizeOptionAndAddingExtraFieldsInControlPlusL"/>
+          <include name="checkUseThisLinkOnlyForLoadingOption"/>
+          <include name="checkCannotExceedTheBaseValueOptionForMultipleRowsWithSameItem"/>
+          <include name="checkCannotExceedTheBaseValueOptionForMultipleRowsWithSameItem1"/>
+          <include name="checkValidatingImportFunctionalityInLinksCustomization"/>
+          <include name="checkCustomizeOptionAndHideThisColumnInLineWise"/>
+          <include name="checkExcessesInStocksVoucherBatchNosByWorkFlow"/>
+          <include name="checkExcessesInStocksVoucherBatchNosByConvertingPendingShortageInStocks"/>
+          <include name="checkBaseDocumentCannotBeEditiedAfterItIsLinkedOption"/>
+          <include name="checkRestoringForLinks"/>
+          <include name="checkCannotExceedTheBaseValueOption"/>
+          <include name="beforeMethodExecution"/>
+          <include name="CheckToleranceValueAndUseItemWiseToleranceWhenAvailableOption"/>
+          <include name="checkConsolidateOnDocumentWhenDisplayingInSelection"/>
+          <include name="checkLinkChainAnalysisReport"/>
+          <include name="checkRestoringForTransactionsForOrderManagement"/>
+          <include name="checkSavingPurchaseOrderAndPurchaseVoucherNRowWisePartialConsumeCloseLink"/>
+          <include name="checkFilterOptionsUnderPendingPurchaseOrderLink"/>
+          <include name="checkAuthorizingPurchaseVoucher"/>
+          <include name="checkValidatingDeleteFunctionalityInLinksCustomization"/>
+          <include name="checkLogout"/>
+          <include name="afterMethodExecution"/>
+          <include name="checkCheckStockWhileLinkingOption"/>
+          <include name="checkDoNotAllowSelectionIfLinksFieldsAreNotSelectedOption"/>
+        </methods>
+      </class> <!-- com.focus.testcases.DesignWorkFlowOptionsTest -->
+      <class name="com.focus.testcases.URLBrowserTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethodExecution"/>
+          <include name="generateReports"/>
+          <include name="intialiseReports"/>
+          <include name="openBrowser"/>
+          <include name="afterMethodExecution"/>
+        </methods>
+      </class> <!-- com.focus.testcases.URLBrowserTest -->
+      <class name="com.focus.testcases.ItemQueryPageTest">
+        <methods>
+          <include name="beforeMethodExecution"/>
+          <include name="checkCustomerAgeingSummeryReportWithRefineFilter"/>
+          <include name="checkSavingStockOutVoucher"/>
+          <include name="checkSavingPurchaseReturnsVoucherWithRmaItemHydWareHosueInINVUser"/>
+          <include name="checkLedgerReportWithRefineFilterFirstPage"/>
+          <include name="checkSavePurchasesVoucher"/>
+          <include name="checkSavingSalesInvoiceVoucherBrBatchItemWithHydWarehouse"/>
+          <include name="checkTrailBalanceReportWithRefineFilter"/>
+          <include name="checkPurchaseRegisterReportWithRefineFilter"/>
+          <include name="checkStockAgeingAnalysisReportByDefault"/>
+          <include name="checkSavingSalesInvoiceVoucherBrBatchItemWithSECWarehouse"/>
+          <include name="checkStockBalanceByWarehouseReport"/>
+          <include name="checkStockBalanceByWarehouseReportWithRefineFilter"/>
+          <include name="checkStockValuationReportByProductbyInventoryTag"/>
+          <include name="checkSavingSalesReturnsVoucherWithAllItemsINVUser"/>
+          <include name="checkSavingexcessInStocksVoucherWithALLItemsInInvUser"/>
+          <include name="checkStockValuationReportByProduct"/>
+          <include name="checkSavingSalesInvoiceVoucherRmaItemWithHYDWarehouse"/>
+          <include name="checkSavingPurchaseReturnsVoucherWithRmaItemSECWareHosueInINVUser"/>
+          <include name="afterMethodExecution"/>
+          <include name="checkVendorAgeingSummeryReportWithRefineFilter"/>
+          <include name="checkSavingSalesInvoiceVoucherRmaItemWithSECWarehouse"/>
+        </methods>
+      </class> <!-- com.focus.testcases.ItemQueryPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
